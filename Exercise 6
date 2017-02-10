@@ -1,0 +1,25 @@
+            //Exercise 6.1
+            Console.WriteLine("This program will indicate the bigger number");
+            double firstNumber = Convert.ToDouble(Console.ReadLine());
+            double secondNumber = Convert.ToDouble(Console.ReadLine());
+            if (firstNumber > secondNumber) Console.WriteLine("The bigger number is " + firstNumber);
+            else Console.WriteLine("The bigger number is " + secondNumber);
+            Console.ReadLine();
+
+            //Exercise 6.2
+            Console.WriteLine("This program will calculate the total price for printing");
+            int nbrOfCoppies = int.Parse(Console.ReadLine());
+            if (nbrOfCoppies <= 10)
+            {
+                int totalPrice1 = nbrOfCoppies * 50;
+                Console.WriteLine("Total price: " + totalPrice1);
+            }
+            else
+            {
+                int totalPrice2 = 500 + (nbrOfCoppies - 10) * 20;
+                Console.WriteLine("Total price: " + totalPrice2);
+            }
+            Console.ReadLine();
+
+            //Exercise 6.3
+            Console.WriteLine("This program will calculate the total price of fuel");

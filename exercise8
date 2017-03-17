@@ -1,0 +1,78 @@
+            //8.1
+            Console.WriteLine("Exercise 8.1");
+            int i;
+            const int max1 = 5;
+            int[] list1 = new int[max1];
+            for (i=1;i<max1;i+=2)
+            {
+                list1[i] = 1;
+            }
+
+            for (i=0;i< max1;i++)
+            {
+                Console.Write(list1[i]);
+            }
+            Console.ReadLine();
+
+            Console.WriteLine(); Console.WriteLine();
+
+
+            //8.2
+            Console.WriteLine("Exercise 8.2");
+            int[] list2 = new int[max1];
+            for (i=0;i<max1;i++)
+            {
+                list2[i] = i + 1;
+                list2[i] *= 2;
+            }
+            for(i=(max1-1);i>=0;i--)
+            {
+                Console.Write(list2[i] + " ");
+            }
+            Console.ReadLine();
+
+            Console.WriteLine(); Console.WriteLine();
+
+
+            //8.3
+            Console.WriteLine("Exercise 8.3");
+            const int max3 = 10;
+            string[] list3 = new string[max3];
+            Console.WriteLine("Please input the names of 10 students!!");
+            Console.WriteLine();
+            for (i = 0; i < max3; i++)
+            {
+                list3[i] = Console.ReadLine();
+                Console.WriteLine("There are " + (max3 - i-1) + " student(s) left");
+                Console.WriteLine();
+            }
+            
+            for (i = 0; i < (max3-1); i++)
+            {
+                Console.Write(list3[i] + ", ");
+            }
+            Console.WriteLine(list3[max3-1]+".");
+            Console.ReadLine();
+
+            Console.WriteLine(); Console.WriteLine();
+
+
+            //8.4
+            Console.WriteLine("Exercise 8.4");
+            string[] list4 = new string[max3];
+            Console.WriteLine("Please input the names of 10 students!!");
+            Console.WriteLine();
+            for (i = 0; i < max3; i++)
+            {
+                list4[i] = Console.ReadLine();
+                Console.WriteLine("There are " + (max3 - i - 1) + " student(s) left");
+                Console.WriteLine();
+            }
+            for (i = (max3-1); i >=1; i--)
+            {
+                Console.Write(list4[i] + ", ");
+            }
+            Console.Write(list4[0]+ ".");
+            Console.ReadLine();
+
+            Console.WriteLine("Exercise 8.5");

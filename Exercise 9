@@ -1,0 +1,78 @@
+//9.1
+            Console.WriteLine("Exercise 9.1");
+            int i, j;
+            for (i = 0; i <= 99; i++)
+            {
+                if ((i % 2) == 1)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            Console.ReadKey();
+            Console.WriteLine(); Console.WriteLine();
+
+            //9.2
+            Console.WriteLine("Exercise 9.2");
+            for (i = 0; i <= 4; i++)
+            {
+                for (j = 0; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadKey();
+            Console.WriteLine(); Console.WriteLine();
+
+            //9.3
+            Console.WriteLine("Exercise 9.3");
+            const int MAX_ARRAY = 10;
+            string[] myArray = new string[MAX_ARRAY];
+            Console.WriteLine("Please input 10 names!!!");
+            for (i = 0; i < myArray.Length; i++)
+            {
+                myArray[i] = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("There are " + (MAX_ARRAY - i - 1) + " left.");
+            }
+            for (i = 0; i < myArray.Length - 1; i++)
+            {
+                Console.Write(myArray[i] + ", ");
+            }
+            Console.WriteLine(myArray[MAX_ARRAY - 1] + ".");
+            Console.ReadKey();
+            Console.WriteLine(); Console.WriteLine();
+
+            //9.4
+            Console.WriteLine("Exercise 9.4");
+            string[] myArray1 = new string[MAX_ARRAY];
+            Console.WriteLine("Please input 10 names!!!");
+            for (i = 0; i < myArray1.Length; i++)
+            {
+                myArray1[i] = Console.ReadLine();
+                Console.Clear();
+                Console.WriteLine("There are " + (MAX_ARRAY - i - 1) + " left.");
+            }
+            for (i = MAX_ARRAY - 1; i > 0; i--)
+            {
+                Console.Write(myArray1[i] + ", ");
+            }
+            Console.WriteLine(myArray1[0] + ".");
+            Console.ReadKey();
+            Console.WriteLine(); Console.WriteLine();
+
+            //9.5
+            Console.WriteLine("Exercise 9.5");
+            int[] myArray2 = new int[MAX_ARRAY];
+            Console.WriteLine("Please input a number!!!");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            for (i=0; i< MAX_ARRAY; i++)
+            {
+                myArray2[i] = (i + 1) * n;
+                Console.WriteLine(myArray2[i]);
+            }
+            Console.ReadKey();
+            Console.WriteLine(); Console.WriteLine();
+
+            //9.6
